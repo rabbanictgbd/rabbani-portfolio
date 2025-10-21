@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section id="about" className="py-16 px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,6 @@ export default function About() {
               <ul className="mt-4 space-y-1 text-sm text-gray-600">
                 <li><strong>Location:</strong> Dhaka, Bangladesh</li>
                 <li><strong>Email:</strong> rabbanictgbd@gmail.com</li>
-                <li><strong>Available:</strong> Open for freelance & collaboration</li>
               </ul>
             </div>
           </div>
