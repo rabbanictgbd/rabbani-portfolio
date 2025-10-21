@@ -30,8 +30,8 @@ export default function About() {
                 I am a Web Developer and System Support Engineer with practical experience building responsive and user-friendly web apps. I enjoy problem-solving and learning new technologies.
               </p>
               <ul className="mt-4 space-y-1 text-sm text-gray-600">
-                <li><strong>Location:</strong> Chattogram, Bangladesh</li>
-                <li><strong>Email:</strong> your-email@example.com</li>
+                <li><strong>Location:</strong> Dhaka, Bangladesh</li>
+                <li><strong>Email:</strong> rabbanictgbd@gmail.com</li>
                 <li><strong>Available:</strong> Open for freelance & collaboration</li>
               </ul>
             </div>
