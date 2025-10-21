@@ -49,7 +49,7 @@ export default function Hero() {
             View Projects
           </a>
           <a
-            href="/Abdul_Kader_Rabbani_CV.pdf"
+            href="https://drive.google.com/file/d/19ELi2YZzouI5CXfR2z4FH7Zf2a2OGEnv/view?usp=sharing"
             download
             className="border border-red-600 text-red-600 px-6 py-3 rounded-lg font-medium hover:bg-red-600 hover:text-white transition"
           >
@@ -66,7 +66,7 @@ export default function Hero() {
         className="flex-1 mt-10 md:mt-0 flex justify-center"
       >
         <img
-          src="https://i.ibb.co/ChNsD2B/dev-avatar.png"
+          src="https://i.ibb.co.com/9k7TpGbr/AKR-Picture2.jpg"
           alt="Developer Illustration"
           className="w-72 md:w-96 rounded-full shadow-lg"
         />

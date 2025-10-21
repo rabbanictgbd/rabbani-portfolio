@@ -23,7 +23,7 @@ export default function About() {
         >
           <div className="md:flex md:items-center md:gap-6">
             <div className="w-40 h-40 rounded-full overflow-hidden mx-auto md:mx-0">
-              <img src="https://i.ibb.co/ChNsD2B/dev-avatar.png" alt="profile" className="w-full h-full object-cover"/>
+              <img src="https://i.ibb.co.com/9k7TpGbr/AKR-Picture2.jpg" alt="profile" className="w-full h-full object-cover"/>
             </div>
             <div className="mt-4 md:mt-0">
               <p className="text-lg text-gray-700">
