@@ -1,4 +1,27 @@
 import { motion } from "framer-motion";
+import { FaDownload, FaEye, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+
+const socialLinks = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/your-profile", // replace with your LinkedIn URL
+    icon: <FaLinkedin />,
+    color: "text-blue-600",
+  },
+  {
+    name: "GitHub",
+    url: "https://github.com/rabbanictgbd",
+    icon: <FaGithub />,
+    color: "text-gray-800",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/your-profile", // replace with your Facebook URL
+    icon: <FaFacebook />,
+    color: "text-blue-500",
+  },
+];
+
 
 export default function Hero() {
   return (
@@ -40,7 +63,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex justify-center md:justify-start space-x-4"
+          className="flex justify-center md:justify-start items-center gap-4 flex-wrap"
         >
           <a
             href="#projects"
@@ -48,13 +71,39 @@ export default function Hero() {
           >
             View Projects
           </a>
+
+          {/* ✅ View CV */}
           <a
             href="https://drive.google.com/file/d/19ELi2YZzouI5CXfR2z4FH7Zf2a2OGEnv/view?usp=sharing"
-            download
-            className="border border-red-600 text-red-600 px-6 py-3 rounded-lg font-medium hover:bg-red-600 hover:text-white transition"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-gray-600 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition flex items-center gap-2"
           >
-            Download CV
+            <FaEye /> View CV
           </a>
+
+          {/* ✅ Download CV */}
+          <a
+            href="https://drive.google.com/uc?export=download&id=19ELi2YZzouI5CXfR2z4FH7Zf2a2OGEnv"
+            className="border border-red-600 text-red-600 px-6 py-3 rounded-lg font-medium hover:bg-red-600 hover:text-white transition flex items-center gap-2"
+          >
+            <FaDownload /> Download CV
+          </a>
+          <div className="flex space-x-4 mt-4">
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex items-center space-x-2 hover:scale-110 transition-transform ${link.color}`}
+              >
+                <span className="text-xl">{link.icon}</span>
+                <span className="hidden sm:inline font-medium">{link.name}</span>
+              </a>
+            ))}
+          </div>
+
         </motion.div>
       </div>
 
@@ -67,8 +116,8 @@ export default function Hero() {
       >
         <img
           src="https://i.ibb.co.com/9k7TpGbr/AKR-Picture2.jpg"
-          alt="Developer Illustration"
-          className="w-72 md:w-96 rounded-full shadow-lg"
+          alt="Abdul Kader Rabbani"
+          className="w-72 md:w-96 rounded-full shadow-lg border-4 border-white"
         />
       </motion.div>
     </section>

@@ -20,6 +20,9 @@ export default function Skills() {
     <section id="skills" className="py-16 px-6 text-center">
       <h2 className="text-4xl font-bold mb-10">My Skills</h2>
       <div className="grid gap-8 md:grid-cols-3">
+        Display your skills in a visually appealing graphical format.
+Categorize skills if necessary (e.g., Frontend, Backend, Tools).
+
         {skills.map((skill, idx) => (
           <div
             key={idx}
