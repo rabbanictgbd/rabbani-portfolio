@@ -46,7 +46,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex justify-center md:justify-start flex-wrap m-2 space-x-4"
+          className="flex justify-center md:justify-start flex-wrap gap-2 space-x-4"
         >
           <a
             href="#projects"
