@@ -1,44 +1,53 @@
-import React from "react";
-
-const educationData = [
-  {
-    degree: "B.A. Honors",
-    institution: "International Islamic University Chittagong (IIUC)",
-    subject: "Quranic Sciences & Islamic Studies",
-    gpa: "3.513 / 4.00",
-    year: "2018",
-  },
-  {
-    degree: "Alim (HSC)",
-    institution: "Baitush Sharaf Ideal Kamil Madrasah, Chattogram",
-    gpa: "4.25 / 5",
-    year: "2014",
-  },
-  {
-    degree: "Dakhil (SSC)",
-    institution: "Baitush Sharaf Ideal Kamil Madrasah, Chattogram",
-    gpa: "4.81 / 5",
-    year: "2012",
-  },
-];
+import { FaUniversity } from "react-icons/fa";
 
 const Education = () => {
+  const educationData = [
+    {
+      degree: "Bachelor of Arts (Honors)",
+      subject: "Quranic Sciences & Islamic Studies",
+      institution: "International Islamic University Chittagong (IIUC)",
+      gpa: "GPA: 3.513 / 4.00",
+      year: "2018",
+      icon: <FaUniversity />,
+    },
+  ];
+
   return (
-    <div className="p-6 bg-white rounded-xl shadow-md mt-6">
-      <h2 className="text-2xl font-bold mb-4 text-blue-600">Education</h2>
-      <div className="space-y-4">
-        {educationData.map((edu, index) => (
-          <div key={index} className="border-l-4 border-blue-600 pl-4">
-            <h3 className="text-xl font-semibold">{edu.degree}</h3>
-            <p className="text-gray-700">{edu.institution}</p>
-            {edu.subject && <p className="text-gray-500">Subject: {edu.subject}</p>}
-            <p className="text-gray-500">
-              GPA: {edu.gpa} | Year: {edu.year}
-            </p>
-          </div>
-        ))}
+    <section
+      id="education"
+      className="py-16 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200"
+    >
+      <div className="max-w-5xl mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center mb-10">
+          Academic Qualification
+        </h2>
+        <div className="grid md:grid-cols-1 gap-8">
+          {educationData.map((edu, index) => (
+            <div
+              key={index}
+              className="p-6 shadow-lg rounded-xl bg-gray-50 dark:bg-gray-800 hover:shadow-2xl transition"
+            >
+              <div className="flex items-center gap-4 mb-4 text-green-600 text-3xl">
+                {edu.icon}
+                <h3 className="text-xl font-semibold">{edu.degree}</h3>
+              </div>
+              <p className="text-sm mb-1">
+                <strong>Subject:</strong> {edu.subject}
+              </p>
+              <p className="text-sm mb-1">
+                <strong>Institution:</strong> {edu.institution}
+              </p>
+              <p className="text-sm mb-1">
+                <strong>{edu.gpa}</strong>
+              </p>
+              <p className="text-sm">
+                <strong>Passing Year:</strong> {edu.year}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

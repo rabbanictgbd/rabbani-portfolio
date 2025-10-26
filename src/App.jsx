@@ -6,9 +6,9 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import SocialLinks from "./components/SocialLinks";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
+import Courses from "./components/Courses";
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Courses/>
       <Education/>
       <Experience/>
       <Projects />
