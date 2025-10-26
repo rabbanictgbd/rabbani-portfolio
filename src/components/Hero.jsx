@@ -46,7 +46,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex justify-center md:justify-start space-x-4"
+          className="flex justify-center md:justify-start flex-wrap space-x-4"
         >
           <a
             href="#projects"
@@ -56,14 +56,14 @@ export default function Hero() {
           </a>
 
           <a
-            href="https://drive.google.com/uc?export=download&id=19ELi2YZzouI5CXfR2z4FH7Zf2a2OGEnv"
+            href="https://drive.google.com/uc?export=download&id=1XcC5f46JvaDFgTylxYOqYdYe1mfymogT"
             className="border border-primary text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition flex items-center gap-2"
           >
             <FaDownload /> Download CV
           </a>
 
           <a
-            href="https://drive.google.com/file/d/19ELi2YZzouI5CXfR2z4FH7Zf2a2OGEnv/view"
+            href="https://drive.google.com/file/d/1XcC5f46JvaDFgTylxYOqYdYe1mfymogT/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="border border-accent text-accent px-6 py-3 rounded-lg font-medium hover:bg-accent hover:text-white transition flex items-center gap-2"

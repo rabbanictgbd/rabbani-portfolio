@@ -1,42 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import { FaPhoneAlt, FaEnvelope, FaGithub, FaLinkedin, FaGlobe } from "react-icons/fa";
 
 export default function Contact() {
-  const [status, setStatus] = useState("");
-
-  function handleSubmit(e) {
-    e.preventDefault();
-    // Placeholder: integrate EmailJS or backend endpoint here
-    setStatus("Message sent (demo). Replace with EmailJS or backend.");
-    e.target.reset();
-    setTimeout(() => setStatus(""), 5000);
-  }
-
   return (
-    <section id="contact" className="py-16 px-6">
-      <div className="max-w-3xl mx-auto">
-        <motion.h2 initial={{ y: 8, opacity: 0 }} whileInView={{ y:0, opacity:1 }} viewport={{ once: true }} className="text-3xl font-bold text-center text-primary mb-6">
+    <section id="contact" className="py-16 px-6 bg-base-100">
+      <div className="max-w-3xl mx-auto text-center">
+        <motion.h2 
+          initial={{ y: 8, opacity: 0 }} 
+          whileInView={{ y: 0, opacity: 1 }} 
+          viewport={{ once: true }} 
+          className="text-3xl font-bold text-primary mb-6"
+        >
           Contact
         </motion.h2>
 
-        <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-center text-gray-600 mb-6">
-          Interested in working together? Fill out the form or reach me via email.
+        <motion.p 
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }} 
+          className="text-gray-600 mb-8"
+        >
+          Get in touch with me via the following channels:
         </motion.p>
 
-        <motion.form initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} onSubmit={handleSubmit} className="bg-base-100 p-6 rounded-2xl shadow-sm">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input name="name" type="text" required placeholder="Your name" className="input input-bordered w-full" />
-            <input name="email" type="email" required placeholder="Your email" className="input input-bordered w-full" />
-          </div>
-          <textarea name="message" required placeholder="Your message" className="textarea textarea-bordered w-full mt-4 h-32"></textarea>
+        <motion.div 
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }} 
+          className="space-x-6 text-left md:text-left flex flex-wrap items-center md:items-center"
+        >
+          <p className="flex items-center gap-3 text-lg">
+            <FaPhoneAlt className="text-primary" /> 
+            <span>+880 1832786121</span>
+          </p>
 
-          <div className="flex items-center justify-between mt-4">
-            <button type="submit" className="btn btn-primary">Send Message</button>
-            <div className="text-sm text-gray-500">Or email: <a href="mailto:rabbanictgbd@gmail.com" className="text-primary">rabbanictgbd@gmail.com</a></div>
-          </div>
+          <p className="flex items-center gap-3 text-lg">
+            <FaEnvelope className="text-primary" /> 
+            <a href="mailto:rabbanictgbd@gmail.com" className="text-primary">rabbanictgbd@gmail.com</a>
+          </p>
 
-          {status && <p className="mt-3 text-sm text-green-600">{status}</p>}
-        </motion.form>
+          <p className="flex items-center gap-3 text-lg">
+            <FaGithub className="text-primary" /> 
+            <a href="https://github.com/rabbanictgbd" target="_blank" rel="noreferrer" className="text-primary">GitHub</a>
+          </p>
+
+          <p className="flex items-center gap-3 text-lg">
+            <FaLinkedin className="text-primary" /> 
+            <a href="https://www.linkedin.com/in/abdul-kader-rabbani/" target="_blank" rel="noreferrer" className="text-primary">LinkedIn</a>
+          </p>
+        </motion.div>
       </div>
     </section>
   );
