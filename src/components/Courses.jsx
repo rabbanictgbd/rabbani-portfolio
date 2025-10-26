@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaCertificate, FaGraduationCap } from "react-icons/fa";
 
 const ProfessionalCourses = () => {
@@ -33,21 +34,26 @@ const ProfessionalCourses = () => {
   return (
     <section
       id="professional-courses"
-      className="py-16 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200"
+      className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl"
     >
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-center text-primary mb-12"
+        >
           Professional Courses & Certifications
-        </h2>
+        </motion.h2>
 
         {/* Courses Section */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {courses.map((course, index) => (
             <div
               key={index}
-              className="p-6 shadow-lg rounded-xl bg-white dark:bg-gray-800 hover:shadow-2xl transition"
+              className="p-6 shadow-lg rounded-xl bg-base-100  hover:shadow-2xl transition"
             >
-              <div className="flex items-center gap-4 mb-2 text-green-600 text-3xl">
+              <div className="flex items-center gap-4 mb-2 text-primary text-3xl">
                 {course.icon}
                 <h3 className="text-xl font-semibold">{course.title}</h3>
               </div>
@@ -67,7 +73,7 @@ const ProfessionalCourses = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="p-6 shadow-lg rounded-xl bg-white dark:bg-gray-800 hover:shadow-2xl transition"
+              className="p-6 shadow-lg rounded-xl bg-base-100 dark:bg-gray-800 hover:shadow-2xl transition"
             >
               <div className="flex items-center gap-4 mb-2 text-blue-600 text-3xl">
                 {cert.icon}

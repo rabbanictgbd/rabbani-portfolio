@@ -17,7 +17,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-16 bg-base-100 text-gray-800">
+    <section id="experience" className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl">
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-12 text-primary">
@@ -29,19 +29,19 @@ const Experience = () => {
           {experienceData.map((exp, index) => (
             <div
               key={index}
-              className="p-6 bg-white rounded-2xl shadow-lg border-l-4 border-primary transition transform hover:-translate-y-1 hover:shadow-2xl duration-300"
+              className="p-6 bg-base-100 rounded-2xl shadow-lg border-l-4 border-primary transition transform hover:-translate-y-1 hover:shadow-2xl duration-300"
             >
               <div className="flex items-center gap-4 mb-4 text-primary text-3xl">
                 {exp.icon}
                 <h3 className="text-2xl font-semibold">{exp.role}</h3>
               </div>
-              <p className="text-lg font-medium text-secondary">
+              <p className="text-lg font-medium">
                 {exp.company}
               </p>
               <p className="text-sm mb-4 text-accent font-semibold">
                 {exp.duration}
               </p>
-              <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              <ul className="list-disc pl-5 space-y-2">
                 {exp.responsibilities.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}

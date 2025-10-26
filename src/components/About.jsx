@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-white"
+      className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-20">
         <motion.h2

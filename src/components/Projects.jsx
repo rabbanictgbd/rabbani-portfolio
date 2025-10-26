@@ -27,7 +27,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-16 px-6 bg-white">
+    <section id="projects" className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl">
       <div className="max-w-6xl mx-auto">
         <motion.h2 initial={{ y: 8, opacity: 0 }} whileInView={{ y:0, opacity:1 }} viewport={{ once: true }} className="text-3xl font-bold text-center text-primary mb-10">
           Projects
