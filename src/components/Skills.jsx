@@ -45,7 +45,8 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl">
+    <section id="skills" className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base-100 mx-2 sm:mx-6 md:mx-12 lg:mx-20 my-6 md:my-10 rounded-2xl shadow-2xl"
+>
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

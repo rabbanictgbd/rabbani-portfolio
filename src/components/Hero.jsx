@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 pt-24 bg-gradient-to-b from-base-100 to-white"
+      className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base-100 mx-2 sm:mx-6 md:mx-12 lg:mx-20 my-6 md:my-10 rounded-2xl shadow-2xl min-h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 pt-24 bg-gradient-to-b from-base-100 to-white"
     >
       {/* Left Content */}
       <div className="flex-1 text-center md:text-left space-y-6">
@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-xl md:text-2xl text-gray-700 font-semibold"
         >
-          Web Developer (MERN Stack)
+          Web Developer
         </motion.h2>
 
         <motion.p
@@ -46,7 +46,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex justify-center md:justify-start flex-wrap space-x-4"
+          className="flex justify-center md:justify-start flex-wrap m-2 space-x-4"
         >
           <a
             href="#projects"

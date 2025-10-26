@@ -4,7 +4,8 @@ import { FaPhoneAlt, FaEnvelope, FaGithub, FaLinkedin, FaGlobe } from "react-ico
 
 export default function Contact() {
   return (
-    <section id="contact" className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl">
+    <section id="contact" className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base-100 mx-2 sm:mx-6 md:mx-12 lg:mx-20 my-6 md:my-10 rounded-2xl shadow-2xl"
+>
       <div className="max-w-3xl mx-auto text-center">
         <motion.h2 
           initial={{ y: 8, opacity: 0 }} 

@@ -17,7 +17,8 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="p-10 bg-base-100 mx-20 my-10 rounded-2xl shadow-2xl">
+    <section id="experience" className="p-4 sm:p-6 md:p-8 lg:p-10 bg-base-100 mx-2 sm:mx-6 md:mx-12 lg:mx-20 my-6 md:my-10 rounded-2xl shadow-2xl"
+>
       <div className="max-w-5xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center mb-12 text-primary">
