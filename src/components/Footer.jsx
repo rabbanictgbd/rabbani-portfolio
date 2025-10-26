@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center justify-center gap-4">
           <a href="https://github.com/rabbanictgbd" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary">GitHub</a>
-          <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/abdul-kader-rabbani/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-primary">LinkedIn</a>
           <a href="mailto:rabbanictgbd@gmail.com" className="text-gray-700 hover:text-primary">Email</a>
         </div>
       </div>

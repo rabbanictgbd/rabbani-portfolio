@@ -7,22 +7,22 @@ export default function Projects() {
       title: "Blood Donation App",
       desc: "Full-stack MERN app to manage donors, donations, and requests.",
       tech: ["React", "Node.js", "MongoDB", "Tailwind"],
-      live: "#",
-      github: "#"
+      live: "https://blood-donation-c.web.app/",
+      github: "https://github.com/rabbanictgbd/Blood-Donation.git"
     },
     {
       title: "Store Management System",
       desc: "Core PHP application for inventory and sales management.",
       tech: ["PHP", "MySQL", "Bootstrap"],
-      live: "#",
-      github: "#"
+      live: "http://rabbanictgbd.kesug.com/",
+      github: "https://github.com/rabbanictgbd/store_ms.git"
     },
     {
       title: "B2B Wholesale Platform",
       desc: "React + Express platform for wholesale business orders.",
       tech: ["React", "Express", "MongoDB"],
-      live: "#",
-      github: "#"
+      live: "https://b2b-client-side.web.app/",
+      github: "https://github.com/rabbanictgbd/b2b-client-side.git"
     }
   ];
 
