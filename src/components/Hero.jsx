@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-xl md:text-2xl text-gray-700 font-semibold"
         >
-          Web Developer
+          MERN Stack Web Developer
         </motion.h2>
 
         <motion.p
