@@ -36,7 +36,7 @@ export default function About() {
             className="flex-1 text-center md:text-left space-y-4"
           >
             <h3 className="text-2xl font-semibold text-gray-800">
-              👨‍💻 Web Developer | MERN Stack Enthusiast
+              MERN Stack Web Developer
             </h3>
             <p className="text-gray-600 leading-relaxed">
               I am a passionate Web Developer skilled in building responsive, interactive, and scalable web

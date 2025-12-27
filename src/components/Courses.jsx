@@ -4,7 +4,7 @@ import { FaCertificate, FaGraduationCap } from "react-icons/fa";
 const ProfessionalCourses = () => {
   const courses = [
     {
-      title: "Web Development (JavaScript, React, MongoDB)",
+      title: "Complete Web Development (JavaScript, React, Node.js, MongoDB)",
       provider: "Programming Hero",
       year: "2025",
       icon: <FaGraduationCap />,
