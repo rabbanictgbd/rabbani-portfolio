@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
-      title: "Blood Donation App",
+      title: "Blood Donation Platform",
       desc: "Full-stack MERN app to manage donors, donations, and requests.",
       tech: ["React", "Node.js", "MongoDB", "Tailwind"],
       live: "https://blood-donation-c.web.app/",
